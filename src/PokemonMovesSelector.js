@@ -15,7 +15,7 @@ function PokemonMovesSelector() {
     <div>
       <button onClick={handleBulbasaurClick}>Fetch Bulbasaur</button>
       <button onClick={handleCharmanderClick}>Fetch Charmander</button>
-      {id ? <PokemonMoves pokemonId={id} /> : null}
+      {id && <PokemonMoves pokemonId={id} />}
     </div>
   );
 }
